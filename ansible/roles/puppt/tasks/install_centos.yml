@@ -1,0 +1,12 @@
+- name: Instalando o repositorio - CentOS
+  yum:
+    name: /tmp/puppet6-release-el-7.noarch.rpm
+    state: present
+
+- name: Puppet-agent
+  yum:
+    name: Puppe-agent	
+    state: present
+      
+    
+ 

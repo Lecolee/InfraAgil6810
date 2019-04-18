@@ -1,0 +1,9 @@
+
+sts: all
+  become: yes
+  tasks:
+
+  - package:
+      name: ['wget', 'curl', 'telnet' ]
+      state: present
+

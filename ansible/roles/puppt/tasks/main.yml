@@ -1,0 +1,8 @@
+---
+# tasks file for puppt
+- include: prerequisitos.yml
+- include: install_centos.yml
+  when: ansible_distribution == "Centos"
+- include: install_ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+
